@@ -4,5 +4,5 @@ int main() {
     std::cin >> str;
     std::cout << "Hello, World! " << str;
     std::cout << "\nHi my friend!!!";
-    std::cout << "\nHow are you ?!!!";
+    std::cout << "\nHow are you ;alksdjf;lkasjdf;lkj?!!!";
 }
