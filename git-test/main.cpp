@@ -1,8 +1,9 @@
 #include <iostream>
 int main() {
     std::string str;
-    std::cin >> str;
+    int a;
+    std::cin >> str >> a;
     std::cout << "Hello, World! " << str;
-    std::cout << "\nHi my friend!!!";
-    std::cout << "\nHow are you ;alksdjf;lkasjdf;lkj?!!!";
+    if (a == 2) std::cin >> a;
+    std::cout << "\nHi my friend!!!" << a;
 }
