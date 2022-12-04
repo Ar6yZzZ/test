@@ -1,9 +1,10 @@
 #include <iostream>
 int main() {
-    std::string str;
-    int a;
-    std::cin >> str >> a;
-    std::cout << "Hello, World! " << str;
-    if (a == 2) std::cin >> a;
-    std::cout << "\nHi my friend!!!" << a;
+    int n, l, r; std::cin >> n; int array[n][3], arr[n];
+    for (int i = 1; i <= n; i++) { std::cin >> l >> array[i][1] >> array[i][2]; }
+    for (int i = n; i >= 1; i--) {
+        l = array[i][1] != 0 ? array[array[i][1]][0] + 1 : 0;
+        r = array[i][2] != 0 ? array[array[i][2]][0] + 1 : 0;
+        arr[i] = l - r; array[i][0] = l > r ? l : r;
+    } for (int i = 1; i <= n; i++) std::cout << arr[i] << '\n';
 }
